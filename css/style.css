@@ -508,7 +508,6 @@ footer{
         display: block;
     }
 
-
     .exp-2{
         background-size: 100% 100%;
     }
@@ -605,5 +604,18 @@ footer{
 
     .call-to-action h1{
         font-size: 30px;
+    }
+    
+    .empresas-reconhecidas{
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .empresas-reconhecidas img{
+        width: 30%;
+        margin-top: 30px;
+        margin-left: 10px;
     }
 }
