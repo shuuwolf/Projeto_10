@@ -1,0 +1,609 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body,html {
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+/*** HEADER ***/
+main{
+    background: url(../images/bg.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+main header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+main header .desktop-nav ul{
+    display: flex;
+    list-style: none;
+}
+
+main header .desktop-nav ul li{
+    margin-left: 50px;
+}
+
+main header .desktop-nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main header .desktop-nav ul li #orcamento{
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-weight: normal;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+main header .mobile-nav{
+    display: none;
+    position: relative;
+    right: 0px;
+    top: -8px;
+    cursor: pointer;
+}
+
+main header .mobile-img{
+    display: none;
+    float: right;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: -30px;
+    right: 20px;
+    cursor: pointer;
+}
+
+main header .mobile-img img{
+    width: 100%;
+    height: 100%;
+}
+
+main header .mobile-nav{
+    display: none;
+    list-style-type: none;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+main header .mobile-nav li{
+    line-height: 40px;
+    background: black;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+main header .mobile-nav li a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    z-index: 3;
+}
+
+main header .mobile-nav li a:hover{
+    text-decoration: underline;
+}
+
+.call-to-action{
+    width: 50%;
+    margin-left: 20px;
+    padding-bottom: 150px;
+}
+
+.call-to-action h1{
+    margin-top: 90px;
+    color: white;
+    font-size: 38px;
+    font-weight: normal;
+}
+
+.call-to-action p{
+    margin-top: 20px;
+    color: rgb(185, 185, 185);
+}
+
+.call-to-action form{
+    margin-top: 30px;
+}
+
+.call-to-action form input{
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    padding-left: 15px;
+    width: 230px;
+}
+
+.call-to-action form button{
+    background-color: orangered;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 20px;
+}
+
+/***EXP SECTION***/
+section.experiencia{
+    padding: 60px 0;
+}
+
+section.experiencia blockquote{
+    max-width: 600px;
+    margin: 0 auto;
+    font-style: italic; 
+    font-size: 18px;
+    color: rgb(0, 0, 73);
+    text-align: center;
+}
+
+.exp-1{
+    margin-top: 50px;
+    display: flex;
+}
+
+.exp-1 .exp-text{
+    color: rgb(0, 0, 73);
+    margin-right: 25px;
+    position: relative;
+    top: 20px;
+}
+
+.exp-1 .exp-text h2{
+    color: rgb(0, 0, 73);
+    text-align: left;
+    font-size: 23px;
+}
+
+.exp-1 .exp-text p{
+    color: rgb(0, 0, 73);
+    text-align: left;
+    margin-top: 40px;
+    font-size: 17px;
+}
+
+.exp-1 .exp-img img{
+    box-shadow: 1px 1px 20px rgb(49, 49, 49);
+    border-radius: 20px;
+}
+
+.exp-2{
+    background-image: url(../images/bg2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 400px;
+    margin-top: 40px;
+    position: relative;
+}
+
+.exp-2 .sobre-text{
+    background: white;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    position: absolute;
+    top: 250px;
+    left: 43%;
+    box-shadow: 1px 1px 20px rgb(49, 49, 49);
+}
+
+.sobre-text p{
+    color: rgb(0, 0, 73);
+}
+
+.sobre-text span{
+    color: rgb(0, 0, 105);
+    margin-top: 20px;
+    display: block;
+}
+
+/***Projetos***/
+.projetos{
+    padding: 50px 0;
+}
+
+.projetos > .container{
+    max-width: 1100px;
+}
+
+.title-projetos{
+    text-align: center;
+    color: rgb(70, 70, 70);
+}
+
+.title-projetos span{
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.projetos-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.projetos-items .item{
+    width: 300px;
+    box-shadow: 1px 2px 20px rgb(160, 160, 160);
+    margin-top: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.projetos-items .item .item-text{
+    padding: 15px;
+}
+
+.projetos-items .item .item-text h3{
+    color: rgb(70, 70, 70);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.projetos-items .item .item-text p{
+    margin-top: 20px;
+}
+
+.projetos-items .item .item-text button{
+    padding: 8px;
+    border-radius: 20px;
+    font-weight: normal;
+    border: 1px solid #ccc;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.projetos-items .item .item-text button:hover{
+    border: 1px solid #ccc;
+    margin-top: 8px;
+    cursor: pointer;
+    color: white;
+    background: rgb(153, 153, 153);
+}
+
+/*** SECTION EMPRESAS ***/
+section.empresas{
+    padding: 40px 0;
+}
+
+section.empresas h2{
+    margin-top: 60px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.empresas-reconhecidas{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.empresas-reconhecidas img{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+section.empresas form{
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.form-control{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+
+.form-control input{
+    width: 80%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding-left: 15px;
+}
+
+.form-control select{
+    width: 80%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding-left: 15px;
+}
+
+.form-control textarea{
+    width: 80%;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px;
+    resize: none;
+}
+
+.form-control button{
+    width: 150px;
+    background: orangered;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.form-control label{
+    width: 20%;
+    text-transform: uppercase;
+    position: relative;
+    top: 10px;
+    font-size: 13px;
+}
+
+/***FOOTER***/
+footer{
+    padding: 40px 0;
+}
+.footer-images{
+    display: flex;
+}
+
+.footer-images .footer-img{
+    width: 50%;
+    height: 300px;
+    position: relative;
+}
+
+.footer-images .footer-img > div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: blue;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0.25;
+}
+
+.footer-images .footer-img a{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    z-index: 4;
+    color: white;
+}
+
+#sobre-text{
+    position: relative;
+    top: -60%;
+    left: 40%;
+    font-size: 27px;
+    color: white;
+    display: inline;
+    z-index: 5;
+}
+
+.footer-images .footer-img img{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+.informacoes{
+    padding: 60px 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+}
+
+.informacoes h2{
+    margin-bottom: 20px;
+    color: rgb(0, 0, 100);
+}
+
+.informacoes > div{
+    max-width: 400px;
+}
+
+.contato a{ 
+    display: block;
+}
+
+.news-letter input{
+    height: 40px;
+    width: 265px;
+    padding-left: 8px;
+    border-radius: 20px;
+    border:1px solid #ccc;
+}
+
+.news-letter span{
+    position: relative;
+    top: 4px;
+    font-size: 25px;
+}
+
+.face-logo{
+    text-align: center;
+}
+
+.face-logo > img{
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (max-width:960px){
+    .footer-images .footer-img{
+        width: 80%;
+        height: 300px;
+        position: relative;
+        margin-top: 30px;
+    }
+
+    .footer-images{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .informacoes{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .informacoes h2{
+        margin-top: 20px;
+    }
+
+    .exp-1{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .exp-1 .exp-img img{
+        margin-top: 50px;
+    }
+
+    nav.desktop-nav{
+        display: none;
+    }
+
+    main header{
+        display: block;
+    }
+
+    main header .mobile-img{
+        display: block;
+    }
+
+
+    .exp-2{
+        background-size: 100% 100%;
+    }
+    
+    .exp-2 .sobre-text{
+        left: 20%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .exp-2{
+        background-size: cover;
+    }
+    
+    .exp-2 .sobre-text{
+        background: white;
+        width: 100%;
+        padding: 30px;
+        border-radius: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 1px 1px 20px rgb(49, 49, 49);
+    }
+
+    .exp-1 .exp-img img{/*mockup*/
+        margin-top: 50px;
+        width: 80%;
+    }
+
+    .footer-images .footer-img{
+        width: 100%;
+        height: 300px;
+        position: relative;
+    }
+
+    .footer-images .footer-img a{
+        width: 100%;
+        height: 300px;
+        position: relative;
+        z-index: 4;
+        color: white;
+    }
+    
+    #sobre-text{
+        position: relative;
+        top: -60%;
+        left: 30%;
+        font-size: 27px;
+        color: white;
+        display: inline;
+        z-index: 5;
+    }
+    
+    .footer-images .footer-img img{
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+    }
+
+    .form-control input{
+        width: 70%;
+    }
+    
+    .form-control select{
+        width: 70%;
+    }
+    
+    .form-control textarea{
+        width: 70%;
+    }
+
+    .form-control{
+        width: 100%;
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+
+    .form-control label{
+        width: 30%;
+        text-transform: uppercase;
+        position: relative;
+        top: 10px;
+        font-size: 13px;
+    }
+
+    .call-to-action{
+        width: 80%;
+        margin-left: 20px;
+        padding-bottom: 150px;
+    }
+
+    .call-to-action h1{
+        font-size: 30px;
+    }
+}
