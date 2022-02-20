@@ -360,6 +360,7 @@ section.empresas form{
     border: none;
     height: 40px;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 .form-control label{
